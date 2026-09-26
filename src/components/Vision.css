@@ -4,10 +4,15 @@
 }
 
 .vision__inner {
-  max-width: 580px;          /* same narrow width as image */
-  margin-left: 30px;            /* force left */
-  margin-right: auto;
+  max-width: 1200px;          /* same container width as About */
+  margin: 0 auto;
+  padding: 0 20px;            /* same left padding as About */
   text-align: left;
+}
+
+/* Content width same as About text column */
+.vision__content {
+  max-width: 580px;
 }
 
 .vision .section-heading {
@@ -48,12 +53,12 @@
   height: 22px;
   min-width: 22px;
   border-radius: 50%;
-  background: #f97316;       /* same orange */
+  background: #f97316;
   color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 12px;
+  flex-shrink: 0;
 }
 
 .vision__icon svg {
@@ -76,14 +81,41 @@
   background: #1e293b;
 }
 
-/* Responsive */
-@media (max-width: 600px) {
+/* Responsive - same as About */
+@media (max-width: 900px) {
   .vision__inner {
-    max-width: 100%;
-    margin-left: 0;
+    padding: 0 20px;
   }
 
   .vision .section-heading {
-    font-size: 1.75rem;
+    font-size: 1.85rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .vision {
+    padding: 60px 0;
+  }
+
+  .vision .section-heading {
+    font-size: 1.7rem;
+  }
+
+  .vision .section-sub {
+    font-size: 1rem;
+  }
+
+  .vision__list li {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .vision {
+    padding: 50px 0;
+  }
+
+  .vision .section-heading {
+    font-size: 1.6rem;
   }
 }
