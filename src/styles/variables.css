@@ -1,0 +1,33 @@
+:root {
+  /* Colors sampled directly from the Figma design */
+  --navy: #0e2a55;
+  --navy-light: #16315c;
+  --green: #1fae5c;
+  --green-dark: #189249;
+  --orange: #fc9534;
+  --orange-dark: #e57e1f;
+  --orange-bg: #ffe4ca;
+  --blue-bg: #e7eef9;
+  --blue-icon: #4b7fd1;
+
+  --bg-white: #ffffff;
+  --bg-light: #f4f5f8;
+  --border-light: #e2e4ea;
+
+  --text-navy: #0e2a55;
+  --text-body: #6b7280;
+  --text-muted: #94a3b8;
+  --text-on-navy: #cbd5e6;
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-full: 999px;
+
+  --shadow-sm: 0 2px 10px rgba(14, 42, 85, 0.06);
+  --shadow-md: 0 10px 30px rgba(14, 42, 85, 0.08);
+
+  --container-width: 1200px;
+
+  --font-base: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+}

@@ -1,0 +1,128 @@
+.work {
+  padding: 20px 0;
+  background: #f8fafc;
+}
+
+.section-head-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  gap: 24px;
+}
+
+.section-head-row .section-heading {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #0f2d5d;
+  margin-bottom: 8px;
+}
+
+.section-head-row .section-sub {
+  font-size: 1rem;
+  color: #64748b;
+  max-width: 480px;
+  margin: 0;
+}
+
+.work__view-all {
+  white-space: nowrap;
+  padding: 10px 20px;
+  border-radius: 999px;
+  border: 1.5px solid #e2e8f0;
+  background: #ffffff;
+  color: #0f2d5d;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.work__view-all:hover {
+  border-color: #0f2d5d;
+  background: #0f2d5d;
+  color: #ffffff;
+}
+
+/* ===== Cards Grid ===== */
+.work__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.work-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 28px 24px;
+  border: 1px solid #eef2f6;
+  box-shadow: 0 4px 12px -4px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.work-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px -8px rgba(0, 0, 0, 0.08);
+}
+
+.work-card__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #f1f5f9;
+  color: #0f2d5d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.work-card h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0f2d5d;
+  margin-bottom: 8px;
+}
+
+.work-card p {
+  font-size: 0.875rem;
+  color: #64748b;
+  line-height: 1.55;
+  margin-bottom: 18px;
+}
+
+.work-card__link {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #f97316;           /* same orange */
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: gap 0.2s ease;
+}
+
+.work-card__link:hover {
+  gap: 8px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 980px) {
+  .work__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .section-head-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .work__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .work__view-all {
+    align-self: flex-start;
+  }
+}
